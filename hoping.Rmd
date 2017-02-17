@@ -1,0 +1,35 @@
+---
+title: "hope"
+author: "Nana-Ama"
+date: "February 17, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r anane}
+quad<-function(x,a=0,b=0,c=0){
+  return(a*x^2+b*x+c)
+}
+x <-seq(from=-10,to =10,by=.1)
+y<- quad(x)
+plot(x,y,'l')
+y2<-quad(x,c=1)
+lines(x,y2,col="blue")
+y3<- quad(x,b=1)
+lines(x,y3,col="red")
+y4<- quad(x,a=1)
+lines(x,y4,col="purple")
+y5<- quad(x,a=1,c=1)
+lines(x,y5,col="orange")
+y6<- quad(x,a=1,b=1)
+lines(x,y6,col="green")
+y7<- quad(x,b=1,c=1)
+lines(x,y7,col="yellow")
+```
+
+
+
+
