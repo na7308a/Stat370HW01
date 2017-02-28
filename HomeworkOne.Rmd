@@ -1,0 +1,40 @@
+---
+title: 'Homework One: Quadratic Equations'
+---
+
+```{r anane1}
+source('~/Stat370HW01/qscript.R')
+x <-seq(from=-10,to =10,by=.1)
+y<- quad(x)
+plot(x,y,'l')
+y2<-quad(x,c=1)
+lines(x,y2,col="blue")
+y3<- quad(x,b=1)
+lines(x,y3,col="red")
+y4<- quad(x,a=1)
+lines(x,y4,col="purple")
+y5<- quad(x,a=1,c=1)
+lines(x,y5,col="black")
+y6<- quad(x,a=1,b=1)
+lines(x,y6,col="green")
+y7<- quad(x,b=1,c=1)
+lines(x,y7,col="yellow")
+```
+
+
+This graph displays quadratic eqautions when different parameters(a,b,or c) are zeros. The quadratic eqautions for when all 3 parameters are nonzeros or zeros are not included.All nonzeros are 1 in the graph.  
+Graph y2(blue) displays the quadratic equation when c is 1. This is a line as y=1. 
+
+Graph y3(red) displays the quadratic equation when b=1. This is a linear equation through the origin with a slope of 1. (y=x)
+
+Graph y4(purple) displays the quadratic equation when a=1. This is a quadratic equation at the origin of y=x^2.
+
+Graph y5(black) displays the quadratic equation when a=1 and c=1. This shows a quadratic equation, x^2 with a minimum value at y=1. y=(x^2)+1
+
+Graph y6(green) displays the quadratic equation when a=1 and b=1.The graph is below the x axis and to the left of 0. y=(x^2)+x
+
+Graph y7(yellow) displays the quadratic equation when b=1 and c=1. The equation becomes y=x+1.The slope is 1 and the intercept is 1. 
+
+
+Looking at the graphs we see what happens when parameters are 0 or when they have no affect on the graph. In some cases, the equations are no longer quadratic but linear equations. In other cases, the quadratic is in simple terms, transformed, moving up,down left or right. Parameters as 0 make x values obselete when put into the function. Only when a parameter is a nonzero does it affect or create a graphic function. When a=0, there is no quadratic equation. When the other parameters are 0, the graph changes according to which parameters are nonzeros.
+

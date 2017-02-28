@@ -1,0 +1,13 @@
+name: "my-website"
+navbar:
+  title: "Nana-Ama's Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Homework One: Quadratic Equations"
+      href: HomeworkOne.html
+    - text: "Homework Two: Injesting Baltimore City Data"
+      href: HWDOS.html
+      
