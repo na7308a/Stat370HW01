@@ -1,3 +1,0 @@
----
-title: "Homework Two: Injesting Baltimore City Data"
----
